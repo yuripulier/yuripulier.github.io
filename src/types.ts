@@ -27,6 +27,7 @@ export interface ResumeData {
   linkedin: string;
   github: string;
   profileImage: string;
+  cvLink: string;
   objective: string;
   experiences: Experience[];
   education: Education[];

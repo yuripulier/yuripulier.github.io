@@ -9,6 +9,7 @@ export const RESUME_DATA: Record<'en' | 'pt', ResumeData> = {
     linkedin: "linkedin.com/in/yuri-celeste-pulier",
     github: "github.com/yuripulier",
     profileImage: "/linkedin.png",
+    cvLink: "/cv-yuri-pulier.pdf",
     objective: "Data Scientist since 2021 with a focus on supply chain and experience in delivery and demand forecasting using artificial neural networks, geoprocessing optimization such as route minimization and area segmentation, inventory and catalog improvement using NLP, deep learning, Generative AI developing AI Agents, time series and churn analysis projects using SQL and interactive dashboards.",
     experiences: [
       {
@@ -90,6 +91,7 @@ export const RESUME_DATA: Record<'en' | 'pt', ResumeData> = {
     linkedin: "linkedin.com/in/yuri-celeste-pulier",
     github: "github.com/yuripulier",
     profileImage: "/linkedin.png",
+    cvLink: "/cv-yuri-pulier.pdf",
     objective: "Cientista de Dados desde 2021 com foco em supply chain e experiência em previsão de entrega e demanda usando redes neurais artificiais, otimização de geoprocessamento como minimização de rotas e segmentação de áreas, melhoria de inventário e catálogo usando NLP, deep learning, IA Generativa desenvolvendo Agentes de IA, projetos de séries temporais e análise de churn usando SQL e dashboards interativos.",
     experiences: [
       {
@@ -198,7 +200,8 @@ export const UI_TEXT = {
     eduTitle: "Academic Background",
     eduDesc: "Solid theoretical foundation in Engineering and Applied Computing.",
     contactTitle: "Contact",
-    contactDesc: "Feel free to get in touch through any of the channels below."
+    contactDesc: "Feel free to get in touch through any of the channels below.",
+    downloadCV: "Download CV"
   },
   pt: {
     home: "Início",
@@ -232,7 +235,8 @@ export const UI_TEXT = {
     eduTitle: "Formação Acadêmica",
     eduDesc: "Base teórica sólida em Engenharia e Computação Aplicada.",
     contactTitle: "Contato",
-    contactDesc: "Sinta-se à vontade para entrar em contato através de qualquer um dos canais abaixo."
+    contactDesc: "Sinta-se à vontade para entrar em contato através de qualquer um dos canais abaixo.",
+    downloadCV: "Baixar CV"
   }
 };
 

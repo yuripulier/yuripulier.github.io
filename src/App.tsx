@@ -21,7 +21,8 @@ import {
   MapPin,
   ExternalLink,
   Send,
-  Languages
+  Languages,
+  FileText
 } from 'lucide-react';
 import { RESUME_DATA, UI_TEXT } from './constants';
 
@@ -289,10 +290,21 @@ export default function App() {
       {/* About Me Section */}
       <section className="max-w-4xl mx-auto px-4">
         <h2 className="section-title">{lang === 'en' ? 'About Me' : 'Sobre Mim'}</h2>
-        <div className="card text-center">
+        <div className="card text-center space-y-8">
           <p className="text-xl text-slate-300 leading-relaxed font-light">
             {r.objective}
           </p>
+          <div className="flex justify-center">
+            <a 
+              href={r.cvLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group relative inline-flex items-center gap-3 px-8 py-4 bg-blue-400 hover:bg-blue-500 text-white rounded-full font-bold transition-all duration-300 shadow-lg shadow-blue-400/20 hover:shadow-blue-400/40"
+            >
+              <FileText size={20} className="group-hover:scale-110 transition-transform" />
+              <span className="uppercase tracking-widest text-sm">{t.downloadCV}</span>
+            </a>
+          </div>
         </div>
       </section>
 
