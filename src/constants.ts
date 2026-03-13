@@ -18,8 +18,8 @@ export const RESUME_DATA: Record<'en' | 'pt', ResumeData> = {
         period: "2025 - current",
         location: "Brazil",
         description: [
-          "KPIs Atvos: Creation of an AI agent responsible for researching and analyzing the company’s KPI data. The orchestrating agent is composed of two sub-agents: Data Finder and Data Analyst.",
-          "The agent was developed using Google ADK and deployed on Agent Engine within the Google Cloud Platform."
+          "KPI's Atvos: Development of an AI agent responsible for streamlining the company’s process mapping, reducing associated costs, and supporting the generation and review of documents created during the mapping process. The agent was developed using Google ADK and deployed on Agent Engine within the Google Cloud Platform. The agent has connections to vector databases for RAG, tools responsible for saving and reading files in Google Cloud Storage.",
+          "Operational Excellence Area: Creation of an AI agent responsible for streamlining the company’s process mapping, reducing associated costs, and supporting the generation and review of documents created during the mapping process. The agent was developed using Google ADK and deployed on Agent Engine within the Google Cloud Platform. The agent has connections to vector databases for RAG, tools responsible for saving and reading files in Google Cloud Storage."
         ]
       },
       {
@@ -100,8 +100,8 @@ export const RESUME_DATA: Record<'en' | 'pt', ResumeData> = {
         period: "2025 - atual",
         location: "Brasil",
         description: [
-          "KPIs Atvos: Criação de um agente de IA responsável por pesquisar e analisar os dados de KPI da empresa. O agente orquestrador é composto por dois sub-agentes: Data Finder e Data Analyst.",
-          "O agente foi desenvolvido usando Google ADK e implantado no Agent Engine dentro da Google Cloud Platform."
+          "KPI's Atvos: Desenvolvimento de um agente de IA responsável por pesquisar e analisar os KPIs da empresa. O agente orquestrador é composto por dois subagentes: Localizador de Dados e Analista de Dados. O Localizador de Dados possui uma ferramenta que traduz a solicitação do usuário em uma consulta SQL para realizar buscas no BigQuery. O Analista de Dados é capaz de receber dados brutos e realizar cálculos complexos, análise de tendências, transformações e formular insights para o usuário.",
+          "Área de Excelência Operacional: Desenvolvimento de um agente de IA responsável por otimizar o mapeamento de processos da empresa, reduzir custos associados e apoiar a geração e revisão de documentos criados durante o processo de mapeamento. O agente foi desenvolvido usando o Google ADK e implantado no Agent Engine dentro da plataforma Google Cloud. O agente possui conexões com bancos de dados vetoriais para RAG, ferramentas responsáveis ​​por salvar e ler arquivos no Google Cloud Storage."
         ]
       },
       {
