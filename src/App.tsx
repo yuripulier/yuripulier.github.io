@@ -139,13 +139,21 @@ export default function App() {
       setStatus('loading');
 
       try {
-        const response = await fetch('/api/contact', {
+        const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData),
+          headers: { 
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+            ...formData
+          }),
         });
 
-        if (response.ok) {
+        const json = await response.json();
+
+        if (response.status === 200) {
           setStatus('success');
           setFormData({ name: '', email: '', message: '' });
           setTimeout(() => setStatus('idle'), 5000);
