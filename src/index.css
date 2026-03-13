@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Noto+Sans:wght@300;400;500;600;700&family=Castoro:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", "Noto Sans", "Castoro", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  @apply bg-slate-900 text-slate-100 font-sans antialiased selection:bg-blue-500/30 selection:text-white;
+  background-image: linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)), url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2070');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.glass {
+  @apply bg-transparent backdrop-blur-[4.2px] border-none shadow-none;
+}
+
+.section-title {
+  @apply text-3xl font-bold tracking-tight text-white mb-8 text-center uppercase;
+}
+
+.card {
+  @apply bg-slate-800/40 backdrop-blur-[12.6px] rounded-2xl border border-white/10 p-8 transition-all duration-300 hover:shadow-2xl hover:border-blue-500/50 hover:bg-slate-800/60;
+}
+
+.skill-tag {
+  @apply px-3 py-1 bg-white/5 text-slate-300 rounded-full text-sm font-medium border border-white/10 hover:bg-blue-500/20 hover:text-blue-400 hover:border-blue-500/30 transition-colors;
+}
+
+.nav-link {
+  @apply text-slate-300 hover:text-blue-400 font-medium transition-colors relative py-2 uppercase tracking-widest text-sm;
+}
+
+.nav-link.active {
+  @apply text-blue-400;
+}
+
+.nav-link.active::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-full h-0.5 bg-blue-400 rounded-full;
+}
+
